@@ -1,7 +1,50 @@
 .logo-header{
     background-color: #FFEAE8;
 }
+
 .navbar-bg{
     background-color: #FF6790 ;
     
 }
+
+button{
+    background-color: #FF6790;
+
+}
+
+.nav-link[data-bs-target] {
+}
+.nav-link[data-bs-target]:hover {
+    color: var(#FFEAE8);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+.nav-link[data-bs-target].active {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
