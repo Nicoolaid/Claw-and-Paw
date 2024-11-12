@@ -8,26 +8,32 @@
 }
 
 button{
-    background-color: #FF6790;
-
+    font-family: "Lilita One" !important;
+    color: white !important;
 }
+
+@font-face {
+    font-family: "Lilita One"; 
+    src: url("https://fonts.google.com/specimen/Lilita+One");
+}
+  
 
 .nav-link[data-bs-target] {
 }
 .nav-link[data-bs-target]:hover {
-    color: var(#FFEAE8);
-    background-color: var(--bs-btn-hover-bg);
-    border-color: var(--bs-btn-hover-border-color);
+    color: white;
+    background-color: #FF6790;
+    border-color:#FF6790;
 }
 .nav-link[data-bs-target].active {
-    color: var(--bs-btn-hover-color);
-    background-color: var(--bs-btn-hover-bg);
-    border-color: var(--bs-btn-hover-border-color);
+    color:white;
+    background-color: #CCC4FF;
+    border-color:#FF6790;
 }
 
-
-
-
+.logo-header a{
+    
+}
 
 
 
