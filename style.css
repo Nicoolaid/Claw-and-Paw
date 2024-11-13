@@ -34,9 +34,17 @@ button{
 .logo-header a{
     
 }
+.container-fluid{
+    background-color: #fcf9d8;
+}
 
+.tab-content img{
+    position: relative;
+    left: -15px;
+    top: 0px
+}
 
-
+.logo-header 
 
 
 
