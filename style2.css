@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: 'Trebuchet MS',sans-serif;
+    font-family: "Lilita One";
     background-color: #313184;
     height: 100vh;
     display: flex;
@@ -14,6 +14,14 @@ body {
     align-items: center;
 }
 
+.submit-btn{
+    font-family: "Lilita One" !important;
+}
+
+@font-face {
+    font-family: "Lilita One"; 
+    src: url("https://fonts.google.com/specimen/Lilita+One");
+}
 
 .container {
     width: 100%;
