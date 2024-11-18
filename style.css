@@ -2,6 +2,8 @@
     background-color: #FFEAE8;
 }
 
+
+
 .navbar-bg{
     background-color: #FF6790 ;
     
@@ -35,17 +37,22 @@ button{
     
 }
 .tab-content div{
-    background-color: #fcf9d8;
+    background-color: #FFFDDF;
+
 }
 
-
+#clawmachine{
+    background-color: #FF6790;
+    border-radius: 25px;
+    width: 20%;
+}
 
 .tab-content .graphic1{
     position:relative;
     z-index: 20;
     left: -15px;
     top: auto;
-    width: 30%;
+    width: 20%;
     height:auto
 }
 
@@ -53,9 +60,9 @@ button{
 .tab-content .cmachine-graphic .graphic2{
     position:relative;
     z-index: 30;
-    top: %;
-    left: 15%;
-
+    top: -30%;
+    left: 49%;
+    width:35%
 }
 
  .tab-content .cmachine-graphic .cmachine{
@@ -64,7 +71,7 @@ button{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 50%;
     height: auto;
 
 }

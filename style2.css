@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 
-
-body {
+.container {
     font-family: "Lilita One";
-    background-color: #313184;
+    background-color: #fcf9d8;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,7 +23,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 105%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +32,7 @@ body {
 
 .form-container {
     background: #FFEAE8;
-    padding: 30px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -69,12 +68,11 @@ input[type="password"] {
     display: none; 
 }
 
-
 .submit-btn {
     width: 100%;
     padding: 12px;
     background-color: #CCC4FF;
-    color: #fcfcfc;
+    color: #FFEAE8;
     border: none;
     font-size: 1.2rem;
     border-radius: 4px;
@@ -107,4 +105,38 @@ input[type="password"] {
     h2 {
         font-size: 1.5rem;
     }
+}
+
+#signin-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#signin-section h2,
+#signin-section label,
+#signin-section input,
+#signin-section button,
+#signin-section a {
+  font-family: 'Lilita One', cursive;
+}
+
+#signin-section form {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(250, 238, 236);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(11, 11, 11, 0.1);
+}
+
+#signin-section .btn {
+  font-size: 16px;
+}
+
+header .btn {
+  font-family: 'Lilita One', cursive;
+  font-size: 14px;
+  padding: 10px 15px;
 }
