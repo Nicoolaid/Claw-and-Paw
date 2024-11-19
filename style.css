@@ -19,49 +19,65 @@
 
     
 
-.tab-content div{
-    background-color: #FFFDDF;
 
+
+ul.nav{
+    background-color:#FF6790;
+    padding:1%;
+    grid-gap: 7%;
 }
 
 li.nav-item{
-    background-color: #FF6790;
-    border-radius: 25px;
-    width: 20%;
+    background-color: #CCC4FF;
+    border-radius: 5px;
+    
     font-family: "Lilita One" !important;
-    color: white !important;
+    color: white;
+    
 }
 
-.nav-link .nav-link:hover .nav-link:visited{
+.nav-link{
     color:white;
 }
 
-.tab-content .graphic1{
+.nav-link:hover{
+    color:white
+}
+
+.nav-link:active{
+    color:white
+}
+
+.graphics .graphic1{
     position:relative;
     z-index: 20;
     left: -15px;
     top: auto;
-    width: 20%;
+    max-width: 37%;
+    min-width: 19%;
     height:auto
 }
 
 
-.tab-content .cmachine-graphic .graphic2{
+.graphics .cmachine-graphic .graphic2{
     position:relative;
     z-index: 30;
-    top: -30%;
-    left: 49%;
-    width:35%
+    top: -50%;
+    left: 39%;
+    max-width:65%;
+    min-width: 30%
 }
 
- .tab-content .cmachine-graphic .cmachine{
+ .graphics .cmachine-graphic .cmachine{
     position:relative;
     z-index: 10;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    max-width: 90%;
+    min-width: 40%;
     height: auto;
+
 
 }
 
@@ -75,12 +91,24 @@ li.nav-item{
     border-width: 3px;
     color:#ffab62;
     font-family:"Tahoma", sans-serif;
-    font-size: large;
+    font-size: 20px;
 
 }
 
-
-
+#catch{
+    max-width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:5%;
+    padding:2%;
+    font-family: "Lilita One";
+    font-size: 250%;
+    border-radius: 70px;
+    background-color:#FF6790;
+    color:white;
+    border:none;
+}
 
 
 

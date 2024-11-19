@@ -7,7 +7,7 @@
 .container {
     font-family: "Lilita One";
     background-color: #fcf9d8;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@
 }
 
 .container {
-    width: 105%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@
 
 h2 {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
 
@@ -124,15 +124,20 @@ input[type="password"] {
 
 #signin-section form {
   max-width: 400px;
-  width: 100%;
+  height: 400px;
+  width: 200%;
   background-color: rgb(250, 238, 236);
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(11, 11, 11, 0.1);
+  border-radius:15px;
 }
 
 #signin-section .btn {
   font-size: 16px;
+  background-color:#b1a6fb;
+  border: 1px solid #FF6790;
+  border-radius:50px;
 }
 
 header .btn {
