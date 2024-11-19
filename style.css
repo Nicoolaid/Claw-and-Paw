@@ -9,42 +9,31 @@
     
 }
 
-button{
-    font-family: "Lilita One" !important;
-    color: white !important;
-}
+
 
 @font-face {
     font-family: "Lilita One"; 
     src: url("https://fonts.google.com/specimen/Lilita+One");
 }
-  
 
-.nav-link[data-bs-target] {
-}
-.nav-link[data-bs-target]:hover {
-    color: white;
-    background-color: #FF6790;
-    border-color:#FF6790;
-}
-.nav-link[data-bs-target].active {
-    color:white;
-    background-color: #CCC4FF;
-    border-color:#FF6790;
-}
 
-.logo-header a{
     
-}
+
 .tab-content div{
     background-color: #FFFDDF;
 
 }
 
-#clawmachine{
+li.nav-item{
     background-color: #FF6790;
     border-radius: 25px;
     width: 20%;
+    font-family: "Lilita One" !important;
+    color: white !important;
+}
+
+.nav-link .nav-link:hover .nav-link:visited{
+    color:white;
 }
 
 .tab-content .graphic1{
@@ -76,6 +65,19 @@ button{
 
 }
 
+#signin{
+    position:absolute;
+    right: 40px;
+    top: 30px;
+    background-color:#ffe6d7;
+    border-radius:15px;
+    border-color:#ffab62;
+    border-width: 3px;
+    color:#ffab62;
+    font-family:"Tahoma", sans-serif;
+    font-size: large;
+
+}
 
 
 
