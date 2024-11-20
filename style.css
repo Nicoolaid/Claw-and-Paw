@@ -63,9 +63,9 @@ li.nav-item{
     position:relative;
     z-index: 30;
     top: -50%;
-    left: 39%;
+    left: 38%;
     max-width:65%;
-    min-width: 30%
+    min-width: 37%
 }
 
  .graphics .cmachine-graphic .cmachine{
@@ -77,8 +77,15 @@ li.nav-item{
     max-width: 90%;
     min-width: 40%;
     height: auto;
+}
 
-
+.cmachine{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 180%;
+    min-width: 40%;
+    height: auto;
 }
 
 #signin{
@@ -89,14 +96,14 @@ li.nav-item{
     border-radius:15px;
     border-color:#ffab62;
     border-width: 3px;
-    color:#ffab62;
+    color:#ff6790;
     font-family:"Tahoma", sans-serif;
     font-size: 20px;
-
+    font-style:bold !important;
 }
 
-#catch{
-    max-width:60%;
+#playnow{
+    width:60%;     
     margin-left:auto;
     margin-right:auto;
     display:block;
@@ -110,10 +117,128 @@ li.nav-item{
     border:none;
 }
 
+#catch{
+    width:90%;     
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:5%;
+    padding:2%;
+    font-family: "Lilita One";
+    font-size: 500%;
+    border-radius: 70px;
+    background-color:#FF6790;
+    color:white;
+    border:none;
+}
+
+#catgraphic{
+    width:100%
+}
+
+#contactus{
+    padding-top:15%;
+    background-color:#FF6790;
+    font-family: "Lilita One";
+    font-size: 370%;
+    color:white;
+}
+
+.contactmessage{
+    width:60%;     
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:5%;
+    padding:2%;
+    font-family: "Lilita One";
+    font-size: 200%;
+    border-radius: 20px;
+    background-color: #D3ABFF;
+    color:white;
+    border:none;
+    box-shadow: #ffbfbc 3px 8px 5px;
+}
+
+.insta{
+    text-align:left;
+    font-size: 15px;
+    color:#9a84db;
+}
+
+form{
+    color:#dc3b64;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input::placeholder {
+    color: #ffb2c6 !important;
+    opacity: 1; 
+  } 
 
 
+input[type=text] {
+    border: 2px solid #ff6790;
+    border-radius:7px;
+    background-color:
+  }
 
+  span.input-group-text{
+    border: solid #ff6790 !important;
+    color:#ffb2c6;
+  }
 
+  textarea{
+    color:#ffb2c6 !important;
+    border:solid #ff6790 !important;
+  }
+ 
+  .contactheader{
+    font-family:"Lilita One";
+    font-size:25px;
+    color:#d43b64;
+  }
+  
+  .insta a{
+    color:#9a84db;
+  }
 
+p{
+    color:#9a84db;
+  }
 
+.contactfooter{
+    background-color:#FF6790;
+    width:100%;
+    padding-top:7%;
+    padding-bottom:7%;
 
+}
+
+#instructions{
+    color:#F08F97;
+}
+
+.clawmachinediv{
+    height:100%;
+    padding-top:20%;
+    padding-bottom:25%;  
+    background-color: #ffe7e3;
+}
+
+.collectiondiv{
+    background-color: #ffd9a8;
+    padding:5%;
+    padding-bottom: 10%;
+    padding-top:10%;
+    border-radius:30px;
+    width: 90%;
+    height:auto;
+    margin-bottom: 30%;
+}
+
+#collectionheader{
+    font-size:60px;
+    text-align: center;
+    font-family:"Lilita One";
+}

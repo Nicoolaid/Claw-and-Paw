@@ -6,6 +6,7 @@
     <title>Claw and Paw</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
@@ -18,39 +19,111 @@
   
 
   <div class="logo-header">
-    <img src="img/Claw&Paw (13).png" alt="" style="width: 200px;">
+    <a href="index.html"><img src="img/Claw&Paw (13).png" alt="" style="width: 200px;"></a>
     <a class="btn btn-primary" href="signin.html" role="button" id="signin">Sign In/ <br> Login</a>
   </div>
 
   
   <ul class="nav nav-fill object-fit-scale">
     <li class="nav-item ">
-      <a class="nav-link  " aria-current="page" href="clawmachine.html" >Claw Machine</a>
+      <a class="nav-link" aria-current="page" href="clawmachine.html">Claw Machine</a>
     </li>
-    <li class="nav-item" id="clawmachine">
+    <li class="nav-item">
       <a class="nav-link" href="mycollection.html">My Collection</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="aboutus.html">About Us</a>
     </li>
   </ul>
+        
+<div class="container-fluid graphics">
+  <img src="img/graphic 1.png" id="layer2" class="graphic1 position-relative start--15 fixed-top">
+        
+  <div class="container-fluid cmachine-graphic position-relative">
+    <img src="img/graphic 2 hp.png" class="graphic2 position-absolute start-" alt="" id="layer1">
+    <img src="img/cmachine.png" class="cmachine" alt="" id="layer1">
+  </div>
 
-        
+  <div class="container-fluid">
+    <a class="btn btn-primary" href="clawmachine.html" role="button" id="playnow">Play Now!</a>
+  </div>
+</div>
 
-      <div class="container-fluid graphics">
-          <img src="img/graphic 1.png" id="layer2" class="graphic1 position-relative start--15 fixed-top">
-        
-        <div class="container-fluid cmachine-graphic position-relative">
-          <img src="img/graphic 2 hp.png" class="graphic2 position-absolute start-" alt="" id="layer1">
-          <img src="img/cmachine.png" class="cmachine" alt="" id="layer1">
-      </div>
-        <div class="container-fluid">
-        <a class="btn btn-primary" href="firstpet.html" role="button" id="catch">Play Now!</a>
-    </div>
-        </div>
-        
+<div>
+  <img id="catgraphic" src="img/catgraphic.png" alt="">
+</div>
   
- 
+
+
+ <div class="container-fluid" id="contactus">
+    <span class="contact">CONTACT US:</span>
+ </div>
+
+ <div class="container-fluid contactbg">
+  <form>
+    <div class="row m-3">
+      <div class="col">
+        <label for="formGroupExampleInput" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name">
+      </div>
+      <div class="col">
+        <label for="formGroupExampleInput" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last Name">      
+      </div>
+    </div>
+    <div class="row m-3">
+      <div class="col">
+        <label for="formGroupExampleInput" class="form-label">Email</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="you@company.com">
+      </div>
+    </div>
+    <div class="row m-3">
+      <label for="basic-url" class="form-label">Phone Number</label>
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon3">US</span>
+        <input type="text" class="form-control" placeholder="+1(555) 000-0000" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+      </div>
+    </div>
+    <div class="row m-3">
+      <div class="col">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Leave us a message...</textarea>
+      </div>
+    </div>
+  </form>
+ </div>
+
+ <button type="button" class="btn btn-primary contactmessage">Submit Message</button>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-5 text-center">
+      <span class="contactheader">Follow Us</span> <br>
+      <div class="insta m-2">
+      <img src="img/insta.png" width=30px alt="">
+      <a href="https://www.instagram.com/simply.a_lina/">@simply.a_lina</a>
+      <br>
+      <img src="img/insta.png" width=30px alt="">
+      <a href="https://www.instagram.com/ni.coolaid/">@ni.coolaid </a>
+    </div>
+    </div>
+    <div class="col-4">
+      <span class="contactheader">Call Us</span><br>
+      <p>(731) 427-3501</p>
+    </div>
+    <div class="col-3">
+      <span class="contactheader">Visit Us</span> <br>
+      <p>575 Lambuth Blvd, Jackson, TN 38301</p>
+    </div>
+  </div>
+</div>
+
+<div>
+  <img class="contactfooter" src="img/pawprintsfooter.png" alt="">
+</div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="main.js"></script>
   </body>
