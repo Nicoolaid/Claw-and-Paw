@@ -1,21 +1,38 @@
 
   .about-container {
-    max-width: 800px;
-    margin: 20px;
-    font-family: 'Lilita One', cursive;
+    display: flex;
+
+  }
+
+    max-width: ;
+    margin: ;
+   
     line-height: 1.6;
     color: #333;
+    display:flex;
+  .about-content {
+    font-family: "Lilita One", cursive;
   }
-  
-  .about-image {
-    display:block;
-    margin-left:50%;
-    width: 50%;
+    margin-left:;
+    width: %;
     height: auto;
-    border-radius: 900px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+    
+    m
+
+    .image img{
+      width: 400px;
+      height: 250px;
+      border-radius: 50%;
+      font-size: 90px;
+      float: right;
+
+    }
+
+
+
+
+
+    
   .about-text {
     text-align: justify;
   }
