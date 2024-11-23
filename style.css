@@ -25,16 +25,25 @@ ul.nav{
     background-color:#FF6790;
     padding:1%;
     grid-gap: 7%;
+
 }
 
 li.nav-item{
     background-color: #CCC4FF;
     border-radius: 5px;
-    
     font-family: "Lilita One" !important;
     color: white;
+    position:relative;
+    width:5%;
     
 }
+.nav-item span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size:70%;
+  }
 
 .nav-link{
     color:white;
