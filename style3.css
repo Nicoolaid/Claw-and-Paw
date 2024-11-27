@@ -1,50 +1,40 @@
 
-  .about-container {
-    display: flex;
 
-  }
-
-    max-width: ;
-    margin: ;
-   
-    line-height: 1.6;
-    color: #333;
-    display:flex;
-  .about-content {
-    font-family: "Lilita One", cursive;
-  }
-    margin-left:;
-    width: %;
-    height: auto;
-    
-    m
-
-    .image img{
-      width: 400px;
-      height: 250px;
-      border-radius: 50%;
-      font-size: 90px;
-      float: right;
-
-    }
-
-
-
-
-
-    
-  .about-text {
-    text-align: justify;
+  
+  .headerabt p{
+  
   }
   
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #;
-    text-align: center;
+.badge{
 
-  }
-  
-  p {
-    font-size: 1.2em;
-  }
+}
+
+.headerabt{
+  width: 50%;
+  overflow: hidden;
+
+}
+
+.aboutcontent{
+  display:block;
+  height: 50%;
+  overflow: hidden;
+}
+
+ div .aboutimg{
+  float: right;
+  border-radius: 70%;
+  padding: 7%;
+
+}
+
+.aboutimgdiv{
+  overflow: hidden;
+  float: right;
+}
+ 
+ div p{
+  padding: 1%;
+  color: #cab9ff;
+ }
+

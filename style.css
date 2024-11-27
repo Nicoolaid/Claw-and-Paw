@@ -42,7 +42,7 @@ li.nav-item{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    font-size:100%;
+    font-size:80%;
   }
 
 .nav-link{
