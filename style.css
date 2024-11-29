@@ -1,6 +1,5 @@
 .logo-header{
     background-color: #ffe9e8;
-    height:fit-content;
 }
 
 
@@ -24,7 +23,7 @@
 
 ul.nav{
     background-color:#FF6790;
-    padding:2%;
+    padding:5%;
     grid-gap: 6%;
     height:fit-content;
 
@@ -94,7 +93,8 @@ li.nav-item{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    max-width: 180%;
+    min-width: 40%;
     height: auto;
 }
 
