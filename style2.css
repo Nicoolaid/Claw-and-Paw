@@ -124,8 +124,8 @@ input[type="password"] {
 }
 
 #signin-section form {
-  max-width: 400px;
-  height: 400px;
+  max-width: 400vw;
+  height: auto;
   width: 200%;
   background-color: rgb(250, 238, 236);
   border-radius: 8px;
@@ -145,4 +145,23 @@ header .btn {
   font-family: 'Lilita One', cursive;
   font-size: 14px;
   padding: 10px 15px;
+}
+
+p a, .links{
+    color: #FF6790;
+}
+
+#joinus{
+    width: 75vw;
+    left: 25%;
+    position: relative;
+    z-index: 10;
+    top: -275px;
+    padding-top: -30px;
+    height: auto;
+    object-fit: fill;
+}
+
+.joinusdiv{
+    padding: px;
 }

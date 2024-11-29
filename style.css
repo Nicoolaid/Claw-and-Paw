@@ -1,5 +1,6 @@
 .logo-header{
     background-color: #ffe9e8;
+    height:fit-content;
 }
 
 
@@ -23,7 +24,7 @@
 
 ul.nav{
     background-color:#FF6790;
-    padding:5%;
+    padding:2%;
     grid-gap: 6%;
     height:fit-content;
 
@@ -93,8 +94,7 @@ li.nav-item{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 180%;
-    min-width: 40%;
+    width: 80vw;
     height: auto;
 }
 
@@ -227,6 +227,7 @@ p{
 
 #instructions{
     color:#F08F97;
+    font-size: 3vw;
 }
 
 .clawmachinediv{
@@ -255,8 +256,8 @@ p{
 
 .loginheader .badge{
     background-color: #ff6790;
-    font-size: 40px;
-    min-width: 20%;
+    font-size: 6vw;
+    width: 55vw;
     border-radius:20px;
     font-family: "Lilita One";
     letter-spacing: 3px;
@@ -266,7 +267,7 @@ p{
 .loginheader{
     background-color: white;
     padding: 20px;
-    width:fit-content;
+    width:75vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
@@ -274,4 +275,5 @@ p{
     border: solid 3px #ffbac0;
     box-shadow: #ffb2c6 2px 2px 5px ;
     margin-bottom: 10px;
+
 }
