@@ -7,10 +7,11 @@
 .container {
     font-family: "Lilita One";
     background-color: #fcf9d8;
-    height: 60vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .submit-btn{
