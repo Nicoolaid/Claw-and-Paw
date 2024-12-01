@@ -23,7 +23,7 @@
 
 ul.nav{
     background-color:#FF6790;
-    padding:5%;
+    padding:2%;
     grid-gap: 6%;
     height:fit-content;
 
@@ -98,6 +98,16 @@ li.nav-item{
     height: auto;
 }
 
+.clawmachine2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    min-width: 40%;
+    height: auto;
+    padding-top: 1px;
+}
+
 #signin{
     position:absolute;
     right: 40px;
@@ -125,6 +135,8 @@ li.nav-item{
     background-color:#FF6790;
     color:white;
     border:none;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action .5s infinite  alternate;
 }
 
 #catch{
@@ -140,8 +152,18 @@ li.nav-item{
     background-color:#FF6790;
     color:white;
     border:none;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action .5s infinite  alternate;
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
 #catgraphic{
     width:100%
 }
@@ -168,7 +190,10 @@ li.nav-item{
     color:white;
     border:none;
     box-shadow: #ffbfbc 3px 8px 5px;
+
 }
+
+
 
 .insta{
     text-align:left;
@@ -232,7 +257,7 @@ p{
 
 .clawmachinediv{
     height:100%;
-    padding-top:20%;
+    padding-top:5%;
     padding-bottom:25%;  
     background-color: #ffe7e3;
 }
