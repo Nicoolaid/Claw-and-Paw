@@ -368,28 +368,28 @@ p{
   
   .heart1 {
     max-width: 15vw;
-    top: 70vw;
+    top: 63vw;
     left: 17vw;
     animation-delay: 0s; /* Starts immediately */
   }
   
   .heart2 {
     max-width: 12vw;
-    top: 62vw;
+    top: 56vw;
     left: 14vw;
     animation-delay: 0.25s; /* Delayed to blink after Heart1 */
   }
   
   .heart3 {
     max-width: 11vw;
-    top: 53vw;
+    top: 47vw;
     right: 7vw;
     animation-delay: .5s; /* Delayed to blink after Heart2 */
   }
   
   .heart4 {
     max-width: 10vw;
-    top: 13vw;
+    top: 8vw;
     right:-85%;
     animation-delay: .75s; /* Delayed to blink after Heart3 */
   }
