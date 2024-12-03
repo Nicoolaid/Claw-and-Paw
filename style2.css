@@ -124,12 +124,14 @@ input[type="password"] {
 }
 
 #signin-section form {
-  max-width: 400vw;
+  max-width: 80%;
   height: auto;
   width: 200%;
   background-color: rgb(250, 238, 236);
   border-radius: 8px;
   padding: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
   box-shadow: 0 4px 8px rgba(11, 11, 11, 0.1);
   border-radius:15px;
 }
@@ -141,11 +143,7 @@ input[type="password"] {
   border-radius:50px;
 }
 
-header .btn {
-  font-family: 'Lilita One', cursive;
-  font-size: 14px;
-  padding: 10px 15px;
-}
+
 
 p a, .links{
     color: #FF6790;
@@ -153,15 +151,24 @@ p a, .links{
 
 #joinus{
     width: 75vw;
-    left: 25%;
+    left: 15%;
     position: relative;
     z-index: 10;
-    top: -275px;
+    top: -19vw;
     padding-top: -30px;
     height: auto;
     object-fit: fill;
+    position: absolute;
 }
 
 .joinusdiv{
     padding: px;
+    height: 10px;
+}
+
+.headergraphics{
+    top: 10vw;
+    padding-bottom: 1px;
+    height: 20%;
+    
 }

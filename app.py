@@ -100,13 +100,13 @@ cat_info = {
   
 @app.route("/")  
 def index():  
-   return render_template("index.html")  
+   return render_template("workshop.html")  
   
 @app.route("/play", methods=["POST"])  
 def play():  
 
    cat = random.choices(list(cat_probabilities.keys()), weights=cat_probabilities.values())[0]  
-   return render_template("play.html", cat=cat, cat_info=cat_info[cat])  
+   return render_template("workshop.html", cat=cat, cat_info=cat_info[cat])  
   
 if __name__ == "__main__":  
-   app.run(debug=True)
+   app.run(debug=5500)

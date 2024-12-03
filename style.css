@@ -229,6 +229,10 @@ input::placeholder {
     opacity: 1; 
   } 
 
+  textarea::placeholder{
+    color: #ffb2c6 !important;
+    opacity: 1; 
+  }
 
 input[type=text] {
     border: 2px solid #ff6790;
@@ -304,7 +308,7 @@ p{
     border-radius:20px;
     font-family: "Lilita One";
     letter-spacing: 3px;
-    f
+    top: 108%;
 }
 
 .loginheader{
