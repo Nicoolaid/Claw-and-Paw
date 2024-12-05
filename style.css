@@ -17,7 +17,6 @@
 }
 
 
-    
 
 
 
@@ -33,7 +32,7 @@ li.nav-item{
     background-color: #CCC4FF;
     border-radius: 5px;
     font-family: "Lilita One" !important;
-    color: white;
+    color: white !important;
     position:relative;
     width:fit-content;
     overflow: hidden;
@@ -48,6 +47,10 @@ li.nav-item{
 
 .nav-link{
     color:white;
+}
+
+#nav-linkie{
+  color:white !important;
 }
 
 .nav-link:hover{
@@ -148,7 +151,7 @@ li.nav-item{
     animation: action .5s infinite  alternate;
 }
 
-#catch{
+#catchCatButton{
     width:90%;     
     margin-left:auto;
     margin-right:auto;
@@ -211,7 +214,21 @@ li.nav-item{
 
 }
 
-
+#submitbtn{
+  width:60%;     
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:5%;
+  padding:2%;
+  font-family: "Lilita One";
+  font-size: 200%;
+  border-radius: 20px;
+  background-color: #D3ABFF;
+  color:white;
+  border:none;
+  box-shadow: #ffbfbc 3px 8px 5px;
+}
 
 .insta{
     text-align:left;
@@ -460,3 +477,31 @@ p{
     }
   }
 
+  .modaldesign{
+    left: 0;
+    right: 0;
+    background-color: #ffffff!important;
+  }
+
+.modal-content{
+    background-color: #ffab62;
+}
+
+.modal-header{
+  background-image: url(img/gradient.png);
+
+}
+
+.modal-header .btn-close{
+  background-color: #ffffff !important;
+}
+
+.cat-name{
+  font-size: 44px;
+  font-family: "Lilita One";
+  color: #FF6790;
+}
+
+.catbackground{
+  font-sixe: 20vw;
+}
