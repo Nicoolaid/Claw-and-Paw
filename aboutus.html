@@ -13,6 +13,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<style>
+  body {
+    background-color: white;
+  }
+
+  /* Custom styling for the modal content */
+  .modal-header, .modal-footer {
+    background-image: url(img/gradient.png);
+    color: white;
+  }
+</style>
+
 </head>
 
   
@@ -88,7 +100,37 @@
 </form>
 </div>
 
-<button type="button" class="btn btn-primary contactmessage">Submit Message</button>
+  
+   <button type="button" class="btn btn-primary" id="contactmessage" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Submit Message
+  </button>
+  
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-family: Lilita One; font-size: 6vw;">Successful!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: 6vw; font-family: Outfit; background-color: white; color: #9a84db;">
+          Got it! Thank you for sending us a message ♡
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 5vw; font-family: Lilita One; background-color: #ff6790;">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const myModal = document.getElementById('myModal')
+  const myInput = document.getElementById('myInput')
+  
+  myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+  })
+  </script>
 <br>
 <div class="container-fluid">
 <div class="row">

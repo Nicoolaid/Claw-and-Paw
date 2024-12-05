@@ -14,40 +14,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-<style>
-  /* Style the notification container */
-  .notification {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #9a84db;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
 
-  .notification button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: white;
-    color: #9a84db;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 4vw;
-  }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-  .notification button:hover {
-    background-color: #f0f0f0;
-  }
-</style>
+    /* Custom styling for the modal content */
+    .modal-header, .modal-footer {
+      background-image: url(img/gradient.png);
+      color: white;
+    }
+  </style>
 </head>
+
+
+
   
   <body style="background-color: #fcf9d8;"> 
 
@@ -59,13 +42,13 @@
     
     <ul class="nav nav-fill object-fit-scale">
       <li class="nav-item ">
-        <a class="nav-link" aria-current="page" href="clawmachine.html"><span>Claw Machine</span></a>
+        <a class="nav-link" aria-current="page" href="clawmachine.html"><span style="color: white;">Claw Machine</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="mycollection.html"><span>My Collection</span></a>
+        <a class="nav-link" href="mycollection.html"><span style="color: white">My Collection</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="aboutus.html"><span>About Us</span></a>
+        <a class="nav-link" href="aboutus.html"><span style="color: white;">About Us</span></a>
       </li>
     </ul>
 
@@ -100,38 +83,54 @@
             <input type="password" id="confirm-password" name="confirm-password" class="form-control" 
                    placeholder="Confirm your password (sign-up only)">
           </div>
-          <button id="showNotification">Show Notification</button>
-          <div class="notification" id="notification">
-            <span>You're All Set! Have fun collecting ♡</span>
-            
-            <button id="redirectButton">Go Back to Homepage</button>
+      
+          </form>
+          <button id="openModal" class="btn btn-primary" style="width: 80%; font-size: 9vw;" >SignUp/LogIn</button>
+
+          <div class="modal fade" id="redirectModal" tabindex="-1" aria-labelledby="redirectModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="redirectModalLabel" style="font-family: Lilita One; font-size: 6vw;">Successful!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p style="font-size: 5vw; font-family: Outfit;" >You're all set! Have fun collecting ♡</p>
+                  <p style="font-size: 4vw; font-family: Outfit;">You will be redirected to the homepage in <span id="countdown" style="font-size: 4vw; font-family: Outfit;">5</span> seconds...</p>
+                  <p style="font-size: 4vw; font-family: Outfit;">If not, <a href="index.html" style="font-size: 4vw; font-family: Outfit;">click here</a>.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 5vw; font-family: Lilita One; background-color: #ff6790;">Cancel</button>
+                </div>
+              </div>
+            </div>
           </div>
+        
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
           <script>
-            // Get the notification elements
-            const notification = document.getElementById("notification");
-            const showButton = document.getElementById("showNotification");
-            const redirectButton = document.getElementById("redirectButton");
+            const openModalButton = document.getElementById('openModal');
+            const countdownElement = document.getElementById('countdown');
+            const redirectUrl = 'index.html'; 
+            let countdown = 5;
         
-            // Show the notification
-            showButton.addEventListener("click", function () {
-              notification.style.display = "block";
+      
+            openModalButton.addEventListener('click', () => {
+              const modal = new bootstrap.Modal(document.getElementById('redirectModal'));
+              modal.show();
+ 
+              const interval = setInterval(() => {
+                countdown--;
+                countdownElement.textContent = countdown;
         
-              // Optional: Hide the notification after a delay
-              setTimeout(() => {
-                notification.style.display = "none";
-              }, 10000); // 5 seconds
+                if (countdown === 0) {
+                  clearInterval(interval);
+                  window.location.href = redirectUrl; 
+                }
+              }, 1000);
             });
-        
-            // Redirect to another page when the button is clicked
-            redirectButton.addEventListener("click", function () {
-              window.location.href="../index.html"; // Replace with your target URL
-            });
-          </script>        
-
-
-
-        </form>
+          </script>
       </div>
+          
       <p class="links text-center mt-3">
         <a href="#"  style="font-family: Outfit;">Forgot your password?</a> | <a href="#" style="font-family: Outfit;">Already have an account? Log in</a>
       </p>
@@ -177,7 +176,39 @@
     </form>
    </div>
   
-   <button type="button" class="btn btn-primary contactmessage">Submit Message</button>
+  
+
+<button type="button" class="btn btn-primary" id="contactmessage" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Submit Message
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="font-family: Lilita One; font-size: 6vw;">Successful!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="font-size: 6vw; font-family: Outfit; color: #9a84db;">
+        Got it! Thank you for sending us a message ♡
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 5vw; font-family: Lilita One; background-color: #ff6790;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>
+   
   <br>
   <div class="container-fluid">
     <div class="row">
