@@ -20,7 +20,7 @@
 
   }
 
-  /* Custom styling for the modal content */
+  
   .modal-header, .modal-footer {
     background-image: url(img/gradient.png);
     color: white;
@@ -193,14 +193,14 @@ myModal.addEventListener('shown.bs.modal', () => {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const cats = [
-            { name: "Jingle Snow", probability: 0.15, birthday: "Dec 25, 2020", age: 4, activities: "Playing with ornaments, climbing trees", breed: "Siberian", background: "Jingle Snow was born on Christmas Day and loves napping under the Christmas tree and chasing laser pointers." },
-            { name: "Mittens Blackwood", probability: 0.15, birthday: "Oct 31, 2012", age: 10, activities: "Playing with spiders, chasing ghosts", breed: "Maine Coon", background: "Mittens was born on Halloween and loves all things spooky. She's a brave and adventurous cat who loves to explore the unknown." },
-            { name: "Fluffy Bunnykins", probability: 0.1, birthday: "Apr 1, 2015", age: 7, activities: "Chasing Easter eggs, playing with bunnies", breed: "Ragdoll", background: "Fluffy was born on Easter Sunday and loves all things cute and fluffy. She's a sweet and gentle cat who loves to cuddle and play." },
-            { name: "Puddles Lovestruck", probability: 0.1, birthday: "Feb 14, 2020", age: 4, activities: "Playing with hearts, chasing Cupid", breed: "British Shorthair", background: "Puddles was born on Valentine's Day and loves all things love. She's a sweet and affectionate cat who loves to cuddle and play." },
-            { name: "Ginger Snap", probability: 0.2, birthday: "Mar 17, 2011", age: 13, activities: "Chasing Leprechauns, playing with gold coins", breed: "Orange Tabby", background: "Ginger was born on St. Patrick's Day and loves all things Irish. She's a feisty and playful cat who loves to explore and have fun." },
-            { name: "Simba TurkeyLeg", probability: 0.1, birthday: "Nov 22, 2020", age: 4, activities: "Playing with turkey feathers, chasing turkeys", breed: "Abyssinian", background: "Simba was born on Thanksgiving Day and loves all things food. She's a curious and adventurous cat who loves to explore and try new things." },
-            { name: "Luna Firework", probability: 0.1, birthday: "Jul 4, 2020", age: 4, activities: "Watching fireworks, playing with sparklers", breed: "Calico", background: "Luna was born on the 4th of July and loves all things patriotic. She's a playful and energetic cat who loves to celebrate and have fun." },
-            { name: "Frosty Mittens", probability: 0.1, birthday: "Jan 1, 2019", age: 5, activities: "Building snow forts, chasing snowflakes", breed: "Norwegian Forest", background: "Frosty was born on New Year's Day and loves all things winter. She's a playful and energetic cat who loves to explore the outdoors." }
+        {  name: "Jingle Snow (Epic)",probability: 0.1,birthday: "Dec 25, 2020",age: 4,activities: "Playing with ornaments, climbing trees",breed: "Siberian",background: "Jingle Snow was born on Christmas Day and loves napping under the Christmas tree and chasing laser pointers.",image: "img/christmas.jpg"},
+            {  name: "Mittens Blackwood (Epic)", probability: 0.1, birthday: "Oct 31, 2012", age: 10, activities: "Playing with spiders, chasing ghosts", breed: "Maine Coon", background: "Mittens was born on Halloween and loves all things spooky. She's a brave and adventurous cat who loves to explore the unknown.", image: "img/halloween.jpg"},
+            {  name: "Fluffy Bunnykins (Rare)", probability: 0.15, birthday: "Apr 1, 2015", age: 7, activities: "Chasing Easter eggs, playing with bunnies",breed: "Ragdoll", background: "Fluffy was born on Easter Sunday and loves all things cute and fluffy. She's a sweet and gentle cat who loves to cuddle and play.", image: "img/easter.jpg"},
+            {  name: "Puddles Lovestruck (Rare)", probability: 0.15, birthday: "Feb 14, 2020", age: 4, activities: "Playing with hearts, chasing Cupid", breed: "British Shorthair", background: "Puddles was born on Valentine's Day and loves all things love. She's a sweet and affectionate cat who loves to cuddle and play.", image: "img/valentines.jpg"},
+            {  name: "Ginger Snap (Common)", probability: 0.2, birthday: "Mar 17, 2011", age: 13, activities: "Chasing Leprechauns, playing with gold coins", breed: "Orange Tabby", background: "Ginger was born on St. Patrick's Day and loves all things Irish. She's a feisty and playful cat who loves to explore and have fun.", image: "img/stpatricks.jpg"},
+            {  name: "Simba TurkeyLeg (Legendary)", probability: 0.08,  birthday: "Nov 22, 2020",  age: 4, activities: "Playing with turkey feathers, chasing turkeys", breed: "Abyssinian", background: "Simba was born on Thanksgiving Day and loves all things food. She's a curious and adventurous cat who loves to explore and try new things.", image: "img/thanksgiving.jpg" },
+            {  name: "Luna Firework (Common)", probability: 0.2, birthday: "Jul 4, 2020", age: 4, activities: "Watching fireworks, playing with sparklers",  breed: "Calico", background: "Luna was born on the 4th of July and loves all things patriotic. She's a playful and energetic cat who loves to celebrate and have fun.", image: "img/julyfourth.jpg" },
+            {  name: "Frosty Mittens (Mythic)", probability: 0.02, birthday: "Jan 1, 2019", age: 5,  activities: "Building snow forts, chasing snowflakes", breed: "Norwegian Forest", background: "Frosty was born on New Year's Day and loves all things winter. She's a playful and energetic cat who loves to explore the outdoors.", image: "img/newyears.jpg" }
         ];
 
         function getRandomCat() {
@@ -229,7 +229,7 @@ myModal.addEventListener('shown.bs.modal', () => {
         button.addEventListener("click", () => {
             const selectedCat = getRandomCat();
             catName.textContent = selectedCat.name;
-            catImage.src = "https://via.placeholder.com/300"; 
+            catImage.src = selectedCat.image;
             catBirthday.textContent = selectedCat.birthday;
             catAge.textContent = selectedCat.age;
             catActivities.textContent = selectedCat.activities;

@@ -316,6 +316,7 @@ p{
     font-size:60px;
     text-align: center;
     font-family:"Lilita One";
+    color: #FF6790;
 }
 
 .loginheader .badge{
@@ -504,4 +505,232 @@ p{
 
 .catbackground{
   font-sixe: 20vw;
+}
+
+.image-container{
+  padding-top: 10%;
+
+}
+
+#thanksgivingimg{
+  margin-left: 10px;
+  background-color: #e7beff;
+}
+
+.descbadge{
+  margin-top: 10%;
+  background-image: url(img/gradient3.png) ;
+  font-family: Outfit;
+  box-shadow: 2px 2px 3px #6c3f0c;
+}
+
+.descbadgeval{
+  margin-top: 10%;
+  background-image: url(img/gradient4.png) ;
+  font-family: Outfit;
+  box-shadow: 2px 2px 3px #cb0e5a;
+}
+
+.descbadgepat{
+  margin-top: 10%;
+  background-image: url(img/gradient5.png) ;
+  font-family: Outfit;
+  box-shadow: 2px 2px 3px #025d06;
+}
+
+.descbadgeny{
+  margin-top: 10%;
+  background-image: url(img/gradient6.png) ;
+  font-family: Outfit;
+  box-shadow: 2px 2px 3px #ab270c;
+}
+
+.descbadgej4{
+  margin-top: 10%;
+  background-image: url(img/gradient7.png) ;
+  font-family: Outfit;
+  box-shadow: 2px 2px 3px #f81c1c;
+}
+
+.descbadgehal{
+  margin-top: 10%;
+  background-image: url(img/gradient8.png) ;
+  font-family: Outfit;
+  box-shadow: 2px 2px 3px #f81c1c;
+}
+
+.descbadgeeas{
+  margin-top: 10%;
+  background-image: url(img/gradient9.png) ;
+  font-family: Outfit;
+  box-shadow: 2px 2px 3px #ff3ca4;
+}
+
+.descbadgechr{
+  margin-top: 10%;
+  background-image: url(img/gradient10.png) ;
+  font-family: Outfit;
+  box-shadow: 2px 2px 3px #386c8e;
+}
+
+.backdesc{
+  width: fit-content;
+  background-color: #ff6e462a;
+  font-size:7vw;
+  border-radius: 10px;
+  font-family: Lilita One;
+  color: #ff6e46;
+  border: #ff6e46 solid 3px ;
+}
+
+.backdescval{
+  width: fit-content;
+  background-color: #ffc3d573;
+  font-size:7vw;
+  border-radius: 10px;
+  font-family: Lilita One;
+  color: #ff1c77;
+  border: #ff1c77 solid 3px ;
+}
+
+.backdescpat{
+  width: fit-content;
+  background-color: #a6ff9b39;
+  font-size:7vw;
+  border-radius: 10px;
+  font-family: Lilita One;
+  color: #079e11;
+  border: #079e11 solid 3px ;
+}
+
+.backdescny{
+  width: fit-content;
+  background-color: #41216e1e;
+  font-size:7vw;
+  border-radius: 10px;
+  font-family: Lilita One;
+  color: #3b1867;
+  border: #3b1867 solid 3px ;
+}
+
+.backdescj4{
+  width: fit-content;
+  background-color: #92d9ff1e;
+  font-size:7vw;
+  border-radius: 10px;
+  font-family: Lilita One;
+  color: #1b71e8;
+  border: #1b71e8 solid 3px ;
+}
+
+.backdeschal{
+  width: fit-content;
+  background-color: #b692ff1e;
+  font-size:7vw;
+  border-radius: 10px;
+  font-family: Lilita One;
+  color: #25164f;
+  border: #25164f solid 3px ;
+}
+
+.backdesceas{
+  width: fit-content;
+  background-color: #ffa3ea1e;
+  font-size:7vw;
+  border-radius: 10px;
+  font-family: Lilita One;
+  color: #ff89c8;
+  border: #ff89c8 solid 3px ;
+}
+
+.backdescchr{
+  width: fit-content;
+  background-color: #ffa3ea1e;
+  font-size:7vw;
+  border-radius: 10px;
+  font-family: Lilita One;
+  color: #58c0df;
+  border: #58c0df solid 3px ;
+}
+
+.bgdesc{
+  width: 100% ;
+  display: block;
+  font-size: 6vw;
+  font-family: Outfit;
+  text-align: left;
+  background-image: url(img/gradient3.png) ;
+}
+
+.bgdescval{
+  width: 100% ;
+  display: block;
+  font-size: 6vw;
+  font-family: Outfit;
+  text-align: left;
+  background-image: url(img/gradient4.png) ;
+}
+
+.bgdescpat{
+  width: 100% ;
+  display: block;
+  font-size: 6vw;
+  font-family: Outfit;
+  text-align: left;
+  background-image: url(img/gradient5.png) ;
+}
+
+.bgdescny{
+  width: 100% ;
+  display: block;
+  font-size: 6vw;
+  font-family: Outfit;
+  text-align: left;
+  background-image: url(img/gradient6.png) ;
+}
+
+.bgdescj4{
+  width: 100% ;
+  display: block;
+  font-size: 6vw;
+  font-family: Outfit;
+  text-align: left;
+  background-image: url(img/gradient7.png) ;
+}
+
+.bgdeschal{
+  width: 100% ;
+  display: block;
+  font-size: 6vw;
+  font-family: Outfit;
+  text-align: left;
+  background-image: url(img/gradient8.png) ;
+}
+
+.bgdesceas{
+  width: 100% ;
+  display: block;
+  font-size: 6vw;
+  font-family: Outfit;
+  text-align: left;
+  background-image: url(img/gradient9.png) ;
+}
+
+.bgdescchr{
+  width: 100% ;
+  display: block;
+  font-size: 6vw;
+  font-family: Outfit;
+  text-align: left;
+  background-image: url(img/gradient10.png) ;
+}
+
+
+
+#legendary{
+  width:50vw;
+  z-index:900;
+  position: absolute;
+  top: -40%;
+  left: 35%;
 }
